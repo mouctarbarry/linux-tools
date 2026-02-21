@@ -84,9 +84,3 @@ alias kdp='kubectl describe pod'
 
 alias md='mkdir'
 bind 'set bell-style none'
-printf '\e[?1000l'   # disable terminal mouse bell
-printf '\033[5l'
-# Disable terminal bell completely
-stty -ixon
-stty stop undef
-stty start undef
